@@ -1,0 +1,21 @@
+tr {
+    font-size: large;
+    background-color: rgb(221, 221, 221);
+}
+
+th {
+    border: 1px solid black;
+}
+
+th:hover {
+    background-color: rgb(131, 131, 131);
+    color: rgb(59, 36, 36);
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    width: 100%
+}
