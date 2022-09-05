@@ -1,0 +1,40 @@
+img {
+    width: 500px;
+    height: 500px;
+}
+
+#home {
+    text-align: center;
+}
+
+#gallery {
+    text-align: center;
+}
+
+.solar img {
+    width: 100%;
+}
+
+.solar h1 {
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+}
+
+#footer {
+    text-align: center;
+}
+
+#video {
+    text-align: center;
+}
+
+#nav {
+    text-align: center;
+}
+
+#nav li {
+    display: inline;
+}
