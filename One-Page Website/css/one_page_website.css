@@ -1,0 +1,32 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+}
+
+#contact input[type="text"],
+#contact textarea {
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: #0a0a0a;
+    padding: 2% 1% 2% 7%;
+    border: 1px solid #090B0D;
+    margin: 10px 1em;
+    border-radius: 7px;
+    background: #c1c1c1;
+}
+
+#contact input[type="submit"] {
+    color: rgb(155 155 155);
+    cursor: pointer;
+    font-weight: 600;
+    outline: none;
+    text-align: center;
+    margin: 0px 3%;
+    padding: 7px 0px;
+    width: 15%;
+    font-size: 18px;
+    border-radius: 11px;
+    background-color: #1c1c1c;
+    box-shadow: 1px 1px 4px 0 rgb(0 0 0 / 30%);
+}
