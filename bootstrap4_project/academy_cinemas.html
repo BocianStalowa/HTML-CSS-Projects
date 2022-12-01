@@ -129,15 +129,70 @@
 
         <!-- /Showtimes -->
 
+        <!-- THIS PART WASN'T IN CSS COURSE SO IM ONLY ADDING WHATS RELEVENT, WHICH IS THE BUTTON -->
+        <div class="text-center">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#register">See our monthly movie deals</button>
+        </div>
+        <!--------->
+
+        <!-- Deals -->
+
         <div id="Deals" class="text-center">
             <form action="">
                 <h1 class="text-primary my-5">Sign up for Movie Club Rewards!</h1>
                 <div class="form-group">
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                 </div>
-                <button type="submit" class="btn btn-primary my-3">Submit</button>
+                <button type="button" class="btn btn-primary popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="Signed up to Movie Club Rewards !">
+                    Submit
+                  </button>
             </form>
         </div>
+
+        <!-- /Deals -->
+
+        <!-- MODAL -->
+
+        <div class="modal fade" id='register' tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Sign up for Movie Club Rewards!</h5>
+                        <button type="button" class="close btn btn-danger" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <fieldset class="form-group">
+                            <label form="firstname">First Name:</label>
+                            <input type="text" class="form-control" id="firstname" placeholder="First Name...">
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label form="lastname">Last Name:</label>
+                            <input type="text" class="form-control" id="lastname" placeholder="Last Name...">
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label form="email">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email...">
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label form="password">Password:</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password...">
+                        </fieldset>
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <!--Button with tooltip effect on hover-->
+                        <button type="button" class="btn btn-primary modalform" data-toggle="tooltip" data-placement="top" title="Send the form">Send</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- /MODAL -->
 
         <div class="container my-5">
 
@@ -161,9 +216,21 @@
 
 
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        $('.popover-dismiss').popover({
+            trigger: 'focus'
+        })
+
+
+        $('.modalform').tooltip(
+            'hover focus'
+        )
+    </script>
 </body>
 
 </html>

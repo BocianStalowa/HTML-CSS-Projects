@@ -36,5 +36,7 @@ function showSlides(n) {
     }
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
+    dots[slideIndex - 1].style.opacity = "1";
+    dots[slideIndex - 2].style.opacity = "0.6";
     captionText.innerHTML = dots[slideIndex - 1].alt;
 }
